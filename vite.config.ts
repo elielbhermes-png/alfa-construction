@@ -11,9 +11,9 @@ export default defineConfig({
   },
   server: { port: 3000, host: true },
   build: {
-    outDir: 'dist',
+    outDir: 'client/dist',
     rollupOptions: {
-      input: 'index.html',
+      input: 'client/index.html',
       output: {
         entryFileNames: 'assets/index-[hash].js',
         chunkFileNames: 'assets/index-[hash].js',
